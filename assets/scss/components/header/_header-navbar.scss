@@ -1,0 +1,26 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header-navbar {
+  background-color: yellow;
+
+  &__btn {
+    display: none;
+  }
+
+  &__list {
+    @include unlist;
+    // display: flex;
+    // justify-content: flex-end;
+    // gap: 20px;
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+  }
+  &__link {
+  }
+}

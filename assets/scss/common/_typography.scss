@@ -1,5 +1,11 @@
 @use "../presets" as *;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   overflow-y: scroll;
 }
