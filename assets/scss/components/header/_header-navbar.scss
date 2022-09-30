@@ -2,6 +2,7 @@
 @use "../../mixins" as *;
 
 .header-navbar {
+  display: grid;
   justify-items: end;
 
   &__btn {
@@ -11,6 +12,7 @@
   &__list {
     @include unlist;
     display: grid;
+    width: 100%;
     gap: $gap;
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
     justify-content: end;
@@ -21,5 +23,7 @@
   &__link {
     display: block;
     padding: $gap $gap-sm;
+    font-size: 1.125rem;
+    letter-spacing: 0.1em;
   }
 }
