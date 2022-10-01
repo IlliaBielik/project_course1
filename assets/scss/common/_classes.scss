@@ -2,14 +2,18 @@
 @use "../mixins" as *;
 
 .btn {
-  width: 250px;
-  height: 60px;
-  background-color: rgba($color-light, 0.1);
-  border: $color-light 2px solid;
-  padding: 0.5em 1em;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.125rem;
+
+  width: 250px;
+  height: 60px;
+  padding: 0.5em 1em;
+
   letter-spacing: 0.1em;
+
+  border: $color-light 2px solid;
+  background-color: rgba($color-light, 0.1);
+
+  font-size: 1.125rem;
 }
