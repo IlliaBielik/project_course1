@@ -5,15 +5,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 250px;
   height: 60px;
   padding: 0.5em 1em;
   letter-spacing: 0.1em;
-  border: $color-light 2px solid;
-  background-color: rgba($color-light, 0.1);
+  border-width: 2px;
+  border-style: solid;
   font-size: 1.125rem;
+  transition: background-color 0.5s;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
+
+  &--light {
+    background-color: rgba($color-light, 0.1);
+    border-color: $color-light;
+    width: 250px;
+  }
+
+  &--primary {
+    background-color: rgba($color-primary, 0.8);
+    border-color: $color-primary;
+    width: 350px;
+  }
 }
+
 .visually-hidden {
   @include visually-hidden;
 }

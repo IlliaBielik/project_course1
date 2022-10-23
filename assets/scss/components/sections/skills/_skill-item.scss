@@ -2,32 +2,51 @@
 @use "../../../mixins" as *;
 
 .skill-item {
-  background-color: $color-primary;
   position: relative;
+  overflow: hidden;
 
   &__title {
     @include abs-position();
     z-index: 1;
     margin: 0;
+    font-size: 1.25rem;
+    letter-spacing: 0.1em;
   }
 
   &__link {
-    background-color: red;
     padding: $gap;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
+    transition: color 0.5s;
   }
 
   &__image {
     @include abs-position();
+    background-size: cover;
+    background-position: center;
+    background-color: $color-primary;
+    transition: transform 0.5s;
   }
 
   &__overlay {
     background-color: $color-primary;
     @include abs-position();
     opacity: 0.8;
+    transition: opacity 0.5s;
+  }
+
+  &:hover {
+    .skill-item__overlay {
+      opacity: 0.95;
+    }
+    .skill-item__link {
+      color: $color-accent;
+    }
+    .skill-item__image {
+      transform: scale(1.1);
+    }
   }
 }
 
