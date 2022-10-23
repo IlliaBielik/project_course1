@@ -9,11 +9,11 @@
   width: 250px;
   height: 60px;
   padding: 0.5em 1em;
-
   letter-spacing: 0.1em;
-
   border: $color-light 2px solid;
   background-color: rgba($color-light, 0.1);
-
   font-size: 1.125rem;
+}
+.visually-hidden {
+  @include visually-hidden;
 }
