@@ -14,22 +14,36 @@
   border-width: 2px;
   border-style: solid;
 
-  font-size: 1.125rem;
-
   &:hover,
   &:focus {
     background-color: $color-accent;
   }
 
   &--light {
-    width: 250px;
-    height: 60px;
-
     border-color: $color-light;
     background-color: rgba($color-light, 0.1);
+
+    @include lg-min {
+      font-size: 1.125rem;
+
+      width: 250px;
+      height: 60px;
+    }
+
+    @include lg-md {
+      width: 200px;
+      height: 50px;
+    }
+
+    @include md {
+      width: 170px;
+      height: 40px;
+    }
   }
 
   &--primary {
+    font-size: 1.125rem;
+
     width: 350px;
     height: 60px;
 
