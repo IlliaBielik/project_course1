@@ -23,10 +23,13 @@
 
   &__link {
     display: block;
+
     padding: $gap $gap-sm;
-    letter-spacing: 0.088em;
-    font-size: 1.125rem;
+
     transition: color 0.25s;
+    letter-spacing: 0.088em;
+
+    font-size: 1.125rem;
 
     &:hover,
     &:focus {
